@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2 (Encounter 1) - ULTRAGUIDE</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="../../interactive.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ULTRAGUIDE - V2 (Encounter 1)</h1>
+    </header>
+
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "../special-bosses.html";
+        }
+    </script>
+
+    <!-- Description Section -->
+    <section class="description">
+        <h2>Description</h2>
+        <p>V2 is the first major roadblock in your journey. This fast and unpredictable enemy mirrors many of your own abilities, including dashing, wall jumping, and sliding. It is equipped with its own Piercer Revolver and Core Eject Shotgun, which it uses to seamlessly switch between long and close-range combat. Due to its small size and erratic movement, it can be a difficult target to hit.</p>
+        <p>After defeating V2, it will get back up and dash through the skylight, leaving its Knuckleblaster behind. This powerful weapon can be picked up by the player and equipped.</p>
+        <img src="images/v2-encounter-1.png" alt="V2, Encounter 1">
+
+    </section>
+
+    <!-- Combat Overview Section -->
+    <section class="combat-overview">
+        <h2>Combat Overview</h2>
+        <p>V2 is a fast and unpredictable foe that moves similarly to V1, making it hard to keep track of and harder to hit. It has a variety of attacks, including the Revolver combo, Core Eject Shotgun, and charged Piercer shot. Its ability to quickly switch between close and long-range combat gives it versatility, making it a dangerous opponent at all distances. While V2 cannot absorb blood like V1, any damage dealt will persist until the boss fight restarts.</p>
+    </section>
+
+    <!-- Movement Patterns Section -->
+    <section class="movement-patterns">
+        <h2>Movement Patterns</h2>
+        <p>V2's movement patterns depend on the color of its wings, each indicating a different behavior:</p>
+        <ul>
+            <li><strong>Yellow Wings:</strong> V2 will pick a direction to run in until it collides with something, at which point it will choose a new direction.</li>
+            <li><strong>Blue Wings:</strong> V2 will attempt to circle-strafe around the player while slowly closing in.</li>
+            <li><strong>Red Wings:</strong> V2 aggressively rushes towards the player, using slides to close the distance. Once it reaches a certain distance, it will circle-strafe at close range until the player retreats or the movement pattern changes. This is the only movement pattern V2 will use when enraged.</li>
+            <li><strong>Green Wings:</strong> V2 rapidly gains distance away from the player, reducing its attack speed. This occurs if the player stays too close to V2 for too long but will not trigger if the player has less than 33 health.</li>
+        </ul>
+    </section>
+
+    <!-- Attacks Section -->
+    <section class="attacks">
+        <h2>Attacks</h2>
+        <ul>
+            <li><strong>Revolver Combo:</strong> V2 fires a three-shot combo with its Revolver, preceded by a "pling" sound and a yellow flash. Only one shot can be parried with precise timing.</li>
+            <li><strong>Charged Piercer Beam:</strong> V2 charges up a blue-light beam similar to V1's Piercer Revolver. The beam can be parried.</li>
+            <li><strong>Shotgun Shot:</strong> V2 fires a single shot from its shotgun, accompanied by a "sizzling" sound and an orange flash. The shotgun pellets can be parried.</li>
+            <li><strong>Core Eject Attack:</strong> V2's shotgun ejects its core, causing a loud "revving" sound. This can be shot with a hitscan weapon to create a red explosion.</li>
+        </ul>
+    </section>
+
+    <!-- Rage Section -->
+    <section class="rage">
+        <h2>Rage</h2>
+        <p>V2 becomes enraged when kept at a minimum distance for too long. This is indicated by the rising gauge under its health bar. Once the gauge fills, V2 will enter its enraged state, gaining a [+ENRAGED] style bonus. While enraged, V2's movement speed increases, it cancels slides earlier to chase the player more accurately, and its Piercer charge shots have no cooldown. V2's rage will wear off after remaining within its preferred range for a period of time.</p>
+    </section>
+
+    <!-- Difficulty Changes Section -->
+    <section class="difficulty-changes">
+        <h2>Difficulty Changes</h2>
+        <ul>
+            <li><strong>HARMLESS:</strong> V2's Revolver combo will only fire one shot.</li>
+            <li><strong>LENIENT:</strong> V2's Revolver combo will fire two shots. V2 spends less time airborne.</li>
+            <li><strong>VIOLENT:</strong> V2's movement becomes more unpredictable and difficult to track.</li>
+            <li><strong>BRUTAL:</strong> V2’s health is increased from 40 to 60. Its movements become faster, especially its slides. V2 can also dash now, making it even harder to predict.</li>
+        </ul>
+    </section>
+
+    <!-- Speed Debuffs Section -->
+    <section class="speed-debuffs">
+        <h2>Speed Debuffs</h2>
+        <ul>
+            <li>V2's ground movement is 10% slower if the player has 33 health or less on Violent difficulty or lower.</li>
+            <li>Ground movement is also 10% slower if the player is within 10 units of V2 on Standard difficulty or lower (this debuff stacks with the previous one).</li>
+            <li>V2’s jumps become shorter if the player is within 10 units on Standard difficulty or lower, with an additional jump height debuff if the player has 33 health or less.</li>
+            <li>V2 cannot slide at close range and will cancel its slide sooner if the player has 50 health or less on Standard difficulty or lower.</li>
+            <li>V2’s movement speed is reduced when it is stuck with a Screwdriver drill.</li>
+        </ul>
+    </section>
+
+    <!-- Rending Apart Section -->
+    <section class="rending-apart">
+        <h2>Rending Apart</h2>
+        <p>V2 is a challenging foe due to its unpredictable movement patterns. To counter its speed, try using the Attractor Nailgun or boosting projectile weapons such as the shotgun. Projectile weapons like the Rocket Launcher can also be used to juggle V2, but its constant movement makes hitting it with projectiles difficult. Almost all of V2's attacks can be parried, which helps heal up to the hard damage limit. Managing stamina and utilizing sliding for evasion is crucial to surviving this encounter.</p>
+        <p>V2's arena contains 4 destructible pillars that can be used for cover or to block attacks. However, these pillars can be destroyed by V2's Charged Shot and Core Eject attacks, as well as some of V1's own attacks.</p>
+        <p>In terms of weapons, V1 holds an advantage in weapon diversity, as V2 only has the default Piercer Revolver and Core Eject Shotgun. The player may have the alternate revolvers by now, giving them an edge in the fight. If you have access to the Attractor Nailgun or Sawblade Launcher, you can set traps or use area denial tactics to make V2 more manageable.</p>
+        <p>For those looking to quickly finish the fight, Coin Punching can potentially kill V2 during its bowing animation, but it is not advisable for a fair fight. On Brutal difficulty, the health boost V2 gets alongside other bosses makes this trick much less effective.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <i>ULTRAGUIDE - V2 (Encounter 1)</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+
+</body>
+</html>

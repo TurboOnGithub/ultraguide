@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-1 Sanctum</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>P-1 Sanctum</h1>
+    </header>
+	
+	<div class="back-button-container">
+		<button class="back-button" onclick="goBack()">Go Back</button>
+	</div>
+	<script>
+		function goBack() {
+			window.location.href = "../prime-sanctums.html";
+		}
+	</script>
+	
+    <div class="container">
+        <div class="section">
+            <h2>Explore Guides</h2>
+            <p>Click below to delve into the guides:</p>
+            <button class="navbutton" onclick="goToFleshPrison()">Go to Flesh Prison</button>
+	<br>
+	<br>
+            <button class="navbutton" onclick="goToMinosPrime()">Go to Minos Prime</button>
+        </div>
+    </div>
+    <script>
+        function goToFleshPrison() {
+            window.location.href = "prime-sanctum-bosses/flesh-prison.html";
+        }
+    </script>
+	<script>
+        function goToMinosPrime() {
+            window.location.href = "prime-sanctum-bosses/minos-prime.html";
+        }
+    </script>
+</body>
+</html>

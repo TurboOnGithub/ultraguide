@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swordsmachine Guide - ULTRAGUIDE</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="../../interactive.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ULTRAGUIDE - Swordsmachine</h1>
+    </header>
+    
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "../basic-bosses.html";
+        }
+    </script>
+
+    <!-- Appearance Section -->
+    <section class="appearance">
+        <h2>Appearance</h2>
+        <p>The Swordsmachine is a tall, humanoid machine with yellow armor and black joints, bearing burn marks from battles in Hell. It has a rectangular head with mismatched glowing blue eyes. The machine wields a shotgun as its lower right arm and a large, motorized sword in its left hand that emits a glowing orange light during swings.</p>
+        <img src="images/swordsmachine.png" alt="Swordsmachine Render" width = 500px; height = 650px;>
+    </section>
+
+    <!-- Combat Overview Section -->
+    <section class="combat-overview">
+        <h2>Combat Overview</h2>
+        <p>The Swordsmachine is a fast, relentless opponent with two distinct phases:</p>
+        <ul>
+            <li><strong>Phase 1:</strong> Combines melee sword combos and ranged shotgun blasts.</li>
+            <li><strong>Phase 2:</strong> Focuses on aggressive sword-based attacks after losing its shotgun.</li>
+        </ul>
+        <p>Parrying plays a crucial role in defeating the Swordsmachine. While parried attacks leave it open to damage, they also enrage the machine, making its attacks faster and more frequent. Handle its enraged state with caution.</p>
+    </section>
+
+    <!-- Phase 1 Section -->
+    <section class="phase-one">
+        <h2>Phase 1: Sword and Shotgun</h2>
+        <p>During this phase, the Swordsmachine uses a mix of melee and ranged attacks to corner and overwhelm you.</p>
+        <h3>Key Attacks</h3>
+        <ul>
+            <li><strong>Sword Combo:</strong> A three-hit melee combo. Each swing can be parried during a brief telegraphed window marked by a "pling" sound.</li>
+            <li><strong>Jump Slash:</strong> A leaping melee attack with a similar "pling" telegraph. This can also be parried.</li>
+            <li><strong>Shotgun Blast:</strong> Fires at range, telegraphed by a "pling" sound before the shot. Parrying the pellets does not enrage the Swordsmachine.</li>
+        </ul>
+        <p>Stick close to the Swordsmachine to cancel its shotgun blasts, and parry its melee attacks to create openings. Avoid unnecessary aggression to prevent being overwhelmed when it enrages.</p>
+    </section>
+
+    <!-- Phase 2 Section -->
+    <section class="phase-two">
+        <h2>Phase 2: Blades Unleashed</h2>
+        <p>After losing its shotgun, the Swordsmachine becomes more dangerous, gaining two new ranged sword attacks in addition to its melee capabilities.</p>
+        <h3>Key Attacks</h3>
+        <ul>
+            <li><strong>Spinning Sword Throw:</strong> Throws its sword in a wide arc, targeting your movement. The sword can be parried at any point to deal 20 damage and interrupt the attack.</li>
+            <li><strong>Spiraling Sword Throw:</strong> Throws its sword in a looping pattern around itself. Parry the windup or the sword itself to counter this move.</li>
+        </ul>
+        <p>During this phase, the Swordsmachine is more vulnerable during its attack windups. Stay mobile to avoid the sword throws, and use precise parries to capitalize on its mistakes.</p>
+        <img src="images/swordsmachine-sword.gif" alt="Swordsmachine's Sword" width = 400px; height = 500px;>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies">
+        <h2>Strategies & Tips</h2>
+        <ul>
+            <li><strong>Stay Mobile:</strong> The Swordsmachine’s speed and aggression require constant movement to evade its attacks.</li>
+            <li><strong>Use Parry Windows:</strong> Mastering parry timing is essential, especially against its melee combos and sword throws.</li>
+            <li><strong>Beware of Enrage:</strong> Parrying enrages the Swordsmachine, increasing its attack speed and frequency. Prepare to dodge quickly after parries.</li>
+            <li><strong>Phase 2 Openings:</strong> During sword throws, the Swordsmachine is temporarily vulnerable. Use this window to deal significant damage.</li>
+            <li><strong>Weapon Choices:</strong> The Sharpshooter Revolver and Nailgun are effective for burst damage and sustained fire during its vulnerable moments.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <i>ULTRAGUIDE - Swordsmachine</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* General Body Styles */
+body {
+    font-family: 'Press Start 2P', monospace; /* Pixel-style font for a retro look */
+    background-color: #0d0d0d; /* Deep black for a terminal feel */
+    color: #00ff7f; /* Neon green for text (reminiscent of CRT displays) */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: #004f2d; /* Dark green with a slight rustic hue */
+    color: #00ff7f;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 255, 127, 0.5);
+    border-bottom: 3px solid #007040; /* Subtle line for depth */
+    text-transform: uppercase;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px solid #007040; /* Computer terminal border style */
+    background-color: #0f0f0f; /* Slightly lighter black for contrast */
+    box-shadow: 0 0 20px rgba(0, 255, 127, 0.2);
+    border-radius: 10px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px dashed #004f2d; /* Dotted border for a rustic touch */
+    background: rgba(0, 79, 45, 0.1); /* Subtle green background overlay */
+}
+
+h1, h2, h3 {
+    color: #00ff7f;
+    text-shadow: 0 0 5px #00ff7f, 0 0 10px rgba(0, 255, 127, 0.5);
+}
+
+/* Note Box */
+.note {
+    background: #1a1a1a; /* Dark gray box for contrast */
+    padding: 15px;
+    border-left: 5px solid #00ff7f;
+    color: #b8ffcc; /* Lighter green for emphasis */
+    font-family: 'Courier New', Courier, monospace; /* Retro monospace look */
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #004f2d; /* Match header for symmetry */
+    color: #00ff7f;
+    border-top: 3px solid #007040;
+    font-size: 0.9em;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #007040; /* Border for computery effect */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+}
+
+/* List Styles */
+ul {
+    list-style-type: square; /* Rustic square bullets */
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Back Button Styles */
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    background-color: #004f2d; /* Rustic dark green */
+    color: #00ff7f; /* Neon green text */
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    border: 2px solid #00ff7f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+}
+
+.back-button:hover {
+    background-color: #007040; /* Lighter green on hover */
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.8);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Forward Button Styles */
+.forward-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.forward-button {
+    background-color: #004f2d; /* Rustic dark green */
+    color: #00ff7f; /* Neon green text */
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    border: 2px solid #00ff7f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+}
+
+.forward-button:hover {
+    background-color: #007040; /* Lighter green on hover */
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.8);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Nav Button Styles */
+.navbutton-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navbutton {
+    background-color: #004f2d; /* Rustic dark green */
+    color: #00ff7f; /* Neon green text */
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    border: 2px solid #00ff7f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+}
+
+.navbutton:hover {
+    background-color: #007040; /* Lighter green on hover */
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.8);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Hyperlinks */
+a {
+    color: #00ff7f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ffaa;
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8);
+}
+
+/* Add glowing text animation for specific elements */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 20px rgba(0, 255, 127, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 10px #00ffaa, 0 0 20px #00ffaa, 0 0 40px rgba(0, 255, 127, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 20px rgba(0, 255, 127, 0.5);
+    }
+}
+
+/* Header Glowing Effect */
+header h1 {
+    animation: glow 2s infinite alternate;
+}
+
+/* Highlight important sections */
+.section h2 {
+    font-size: 1.5em;
+    border-bottom: 1px dashed #00ff7f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* For additional computery font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

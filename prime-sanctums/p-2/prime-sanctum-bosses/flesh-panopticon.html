@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAGUIDE - Flesh Panopticon</title>
+    <link rel="stylesheet" href="../../styles.css">
+	<script src="../../../interactive.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ULTRAGUIDE - Flesh Panopticon</h1>
+    </header>
+	
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "../p-2.html";
+        }
+    </script>
+
+    <div class="container">
+        <div class="section">
+            <h2>Appearance and Key Details</h2>
+            <p>The Flesh Panopticon is a massive right rhombohedron (cube) with a large mouth stretching across its sides. It rotates slowly atop a fleshy stalk, resembling a demonic tree. The stalk leads into the cube's base, composed of pallid gray skin reinforced with human bone, giving it a sturdier, more imposing appearance compared to the original Flesh Prison. The Panopticon's face, splayed across the skeletal structure, moves with a counter-rotating ripple as its teeth chatter ominously. </p>
+            <img src="../images/flesh-panopticon/flesh-panopticon.png" alt="Flesh Panopticon Appearance">
+        </div>
+
+        <div class="section">
+            <h2>Offensive Abilities</h2>
+            <h3>YELLOW - Tracking Mortars</h3>
+            <p>Fires 16 tracking mortar projectiles (25 in Phase 2) that follow the player's movement, similar to the Hideous Mass. These mortars lead the player, making them dangerous to avoid. <strong>Note:</strong> Mortars become slower on lower difficulties.</p>
+
+            <h3>WHITE - Virtue Light Beams</h3>
+            <p>The Panopticon summons two (three in Phase 2) massive beams of divine light, with the first being horizontal. The beams increase in duration with each subsequent attack, requiring precise movement to avoid.</p>
+
+            <h3>PURPLE - Black Hole</h3>
+            <p>Summons a Black Hole that follows the player throughout the battle, reducing their health to 1 if caught. This attack does not appear on Harmless difficulty.</p>
+        </div>
+
+        <div class="section">
+            <h2>Minions and Healing Mechanics</h2>
+            <p>The Flesh Panopticon summons a variety of minions, with their number and type changing based on difficulty. As long as at least one minion is alive, the player suffers hard damage, preventing any healing. Killing these minions is crucial for survival, as leaving them alive allows the Panopticon to heal. However, this also triggers Sisyphus Prime to spawn during Phase 2. Minions restore HP to the Panopticon when alive.</p>
+            <div class="note">
+                <strong>Healing Formula:</strong> The Flesh Panopticon heals 20 HP for every minion alive that is not destroyed before the heal timer runs out. The healing is faster if the player directly damages the Panopticon.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Phase 2 Adjustments</h2>
+            <ul>
+                <li>Spawns more minions (4 instead of 3).</li>
+                <li>Increased mortar projectiles and divine beams.</li>
+                <li>Higher difficulty leads to faster and more aggressive attacks, especially with more minions that can deal direct damage.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Strategies for Success</h2>
+            <h3>Prioritize Minions</h3>
+            <p>Use powerful weapons like the Shotgun or Knuckleblaster to quickly eliminate the minions and prevent healing.</p>
+            <h3>Positioning</h3>
+            <p>Keep your distance from the Flesh Panopticon, utilizing vertical and horizontal movement to dodge its mortars and beams. Use the Whiplash to maintain high mobility around the arena.</p>
+            <h3>Utilize the Eyes</h3>
+            <p>The Panopticon's eyes can be used for mobility. You can use them as points to Whiplash off of and move swiftly across the arena.</p>
+        </div>
+
+        <div class="section">
+            <h2>Defeat and Aftermath</h2>
+            <p>Upon defeating the Flesh Panopticon, Sisyphus Prime will break free, instantly ending the fight. Sisyphus Prime will then attack with agility and power, providing a challenging new foe to test your skills.</p>
+            <div class="forward-button-container">
+                <button class="forward-button" onclick="goToSisyphusPrime()">Face Sisyphus Prime</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToSisyphusPrime() {
+            window.location.href = "sisyphus-prime.html";
+        }
+    </script>
+
+    <footer>
+        <i>ULTRAGUIDE - Flesh Panopticon</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+</body>
+</html>

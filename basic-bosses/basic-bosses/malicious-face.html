@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious Face Guide - ULTRAGUIDE</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="../../interactive.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ULTRAGUIDE - Malicious Face</h1>
+    </header>
+    
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "../basic-bosses.html";
+        }
+    </script>
+
+    <!-- Appearance Section -->
+    <section class="appearance">
+        <h2>Appearance</h2>
+        <p>Malicious Faces are large, ominous stone heads with carved facial features. Although they appear to float, a closer look reveals four translucent, spider-like limbs that support their movement. Upon death, these limbs vanish, causing the head to drop to the ground, creating a non-damaging shockwave and killing any enemies beneath it. The corpse can be destroyed with a ground slam, but is otherwise explosion-proof unless covered in gasoline.</p>
+        <img src="images/malicious-face-render.png" alt="Malicious Face Render" width = 400px; height = 400px;>
+    </section>
+
+    <!-- Combat Overview Section -->
+    <section class="combat-overview">
+        <h2>Combat Overview</h2>
+        <p>Malicious Faces are slow-moving but relentless foes, using devastating ranged attacks to pressure the player. Their stone exteriors are resistant to explosives, requiring clever strategies to deal damage effectively. As their health drops, their outer shell cracks, and they become enraged at half health on higher difficulties, attacking faster and more aggressively.</p>
+    </section>
+
+    <!-- Attacks Section -->
+    <section class="attacks">
+        <h2>Attacks</h2>
+        <ul>
+            <li><strong>Hell Energy Barrage:</strong> Fires 6 Hell Energy projectiles in rapid succession. These projectiles can be parried individually or deflected with explosions to deal friendly fire damage.</li>
+            <li><strong>Charged Laser Attack:</strong> Fires a hitscan laser that explodes upon contact, dealing significant damage. Telegraphed by a charging noise and visual cues, with a brief spark and "pling" sound before firing. The laser can be parried to detonate it near the Malicious Face.</li>
+        </ul>
+        <p>The laser attack becomes more frequent as the Malicious Face’s health decreases, and they will prioritize this attack when close to the player or during rocket surfing.</p>
+    </section>
+
+    <!-- Enraged State Section -->
+    <section class="enraged-state">
+        <h2>Enraged State</h2>
+        <p>On higher difficulties, Malicious Faces become enraged at half health, turning red and revealing glowing yellow eyes. In this state, they attack faster, with shorter cooldowns between actions. Their laser attack becomes particularly dangerous, firing a second laser immediately after the first.</p>
+    </section>
+
+    <!-- Difficulty Changes Section -->
+    <section class="difficulty-changes">
+        <h2>Difficulty Changes</h2>
+        <ul>
+            <li><strong>HARMLESS:</strong> Fires only 3 Hell Energy orbs per barrage at a slower rate. Laser takes 5 seconds to charge, with a smaller explosion radius.</li>
+            <li><strong>LENIENT:</strong> Fires 3 Hell Energy orbs per barrage. Laser takes 3.5 seconds to charge, with a smaller explosion radius.</li>
+            <li><strong>VIOLENT:</strong> Attacks have reduced cooldowns. Enrages at half health, attacking faster. Laser takes 2 seconds to charge, firing a second laser while enraged.</li>
+            <li><strong>BRUTAL:</strong> Fires 10 Hell Energy projectiles rapidly with slight inaccuracy. Enrages as on Violent but attacks even more aggressively.</li>
+        </ul>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies">
+        <h2>Strategies & Tips</h2>
+        <ul>
+            <li><strong>Parry Precision:</strong> The Hell Energy projectiles and laser can be parried. Timing is key to turning their attacks into opportunities.</li>
+            <li><strong>Gasoline Exploit:</strong> Covering the Malicious Face in gasoline removes its explosion immunity, making it vulnerable to explosives.</li>
+            <li><strong>Keep Moving:</strong> Maintain distance and use the arena’s geometry to break line-of-sight for the laser attack.</li>
+            <li><strong>Prioritize the Laser:</strong> Parrying the laser attack not only nullifies the damage but also deals significant damage to the Malicious Face.</li>
+            <li><strong>Weapon Choices:</strong> Utilize hitscan weapons like the Marksman Revolver or precision-based options like the Railcannon to deal steady damage while avoiding retaliation.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <i>ULTRAGUIDE - Malicious Face</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+
+</body>
+</html>

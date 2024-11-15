@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAGUIDE - Index</title>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="interactive.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ULTRAGUIDE - Home</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Navigation to different sections -->
+	    <nav>
+            <div class="container">
+                <div class="section">
+                    <button class="navbutton" onclick="goToBasicBosses()">Basic Bosses</button>
+                    <br>
+                    <button class="navbutton" onclick="goToSpecialBosses()">Special Bosses</button>
+                    <br>
+                    <button class="navbutton" onclick="goToPrimeSanctums()">Prime Sanctums</button>
+                    <br>
+                    <button class="navbutton" onclick="goToSecretsAndEasterEggs()">Secrets</button>
+                    <br>
+					<button class="navbutton" onclick="goToLore()">Lore</button>
+                    <br>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search Bar Section -->
+        <div class="section">
+            <h2>Search for Pages</h2>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search for Bosses, Sanctums, Secrets..." oninput="searchFunction()">
+            <div id="search-dropdown" class="search-dropdown"></div> <!-- Dropdown container -->
+        </div>
+
+        <!-- Description Section -->
+        <div class="section">
+            <h2>Welcome to the ULTRAGUIDE!</h2>
+            <p>Explore the world of **ULTRAKILL** with detailed guides for the basic bosses, special bosses, Prime Sanctums, strategies, secrets, and more!</p>
+            <p>Navigate through the buttons above to find everything you need to conquer the brutal world of **ULTRAKILL**.</p>
+        </div>
+    </div>
+
+    <footer>
+        <i>ULTRAGUIDE - Your Guide to ULTRAKILL</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+
+	   <script>
+        function goToBasicBosses() {
+            window.location.href = "basic-bosses/basic-bosses.html";
+        }
+        function goToSpecialBosses() {
+            window.location.href = "special-bosses/special-bosses.html";
+        }
+		function goToPrimeSanctums() {
+            window.location.href = "prime-sanctums/prime-sanctums.html";
+        }
+        function goToSecretsAndEasterEggs() {
+            window.location.href = "secrets/secrets.html";
+        }
+		function goToLore() {
+            window.location.href = "lore/lorenav.html";
+        }
+    </script>
+
+    <script>
+        // Predefined list of pages, bosses, and sanctums
+const pages = [
+    { name: "Cerberus", url: "basic-bosses/basic-bosses/cerberus.html", keywords: ["cerberus", "special boss", "boss fight"] },
+    { name: "Ferryman", url: "basic-bosses/basic-bosses/ferryman.html", keywords: ["ferryman", "special boss", "boss fight"] },
+    { name: "Hideous Mass", url: "basic-bosses/basic-bosses/hideous-mass.html", keywords: ["hideous mass", "special boss", "boss fight"] },
+    { name: "Malicious Face", url: "basic-bosses/basic-bosses/malicious-face.html", keywords: ["malicious face", "special boss", "boss fight"] },
+    { name: "Minotaur", url: "basic-bosses/basic-bosses/minotaur.html", keywords: ["minotaur", "basic boss", "boss fight"] },
+    { name: "Earthmover", url: "basic-bosses/basic-bosses/earthmover.html", keywords: ["earthmover", "special boss", "boss fight"] },
+    { name: "Sisyphean Insurrectionist", url: "basic-bosses/basic-bosses/sisyphean-insurrectionist.html", keywords: ["sisyphean insurrectionist", "special boss", "boss fight"] },
+    { name: "Swordsmachine", url: "basic-bosses/basic-bosses/swordsmachine.html", keywords: ["swordsmachine", "special boss", "boss fight"] },
+    { name: "Gabriel, Judge of Hell", url: "special-bosses/special-bosses/gabriel.html", keywords: ["gabriel judge of hell", "gabriel", "boss fight", "special boss"] },
+    { name: "Gabriel, Apostate of Hate", url: "special-bosses/special-bosses/gabriel2.html", keywords: ["gabriel apostate of hate", "gabriel", "special boss", "boss fight"] },
+    { name: "Mysterious Druid Knight (& Owl)", url: "special-bosses/special-bosses/knight-and-owl.html", keywords: ["mysterious druid knight", "druid knight", "special boss", "boss fight"] },
+    { name: "V2 (First Encounter)", url: "special-bosses/special-bosses/v2-1.html", keywords: ["v2 first encounter", "v2", "basic boss", "boss fight"] },
+    { name: "V2 (Second Encounter)", url: "special-bosses/special-bosses/v2-2.html", keywords: ["v2 second encounter", "v2", "basic boss", "boss fight"] },
+    { name: "Cancerous Rodent", url: "special-bosses/special-bosses/crodent.html", keywords: ["cancerous rodent", "special boss", "boss fight"] },
+    { name: "Very Cancerous Rodent", url: "special-bosses/special-bosses/vcrodent.html", keywords: ["very cancerous rodent", "special boss", "boss fight"] },
+    { name: "Leviathan", url: "special-bosses/special-bosses/leviathan.html", keywords: ["leviathan", "special boss", "boss fight"] },
+    { name: "The Corpse Of King Minos", url: "special-bosses/special-bosses/kingminoscorpse.html", keywords: ["corpse of king minos", "minos", "special boss", "boss fight"] },
+    { name: "Big Johninator", url: "special-bosses/special-bosses/bigjohn.html", keywords: ["big johninator", "special boss", "boss fight"] },
+    { name: "Flesh Prison", url: "prime-sanctums/p-1/prime-sanctum-bosses/flesh-prison.html", keywords: ["flesh prison", "special boss", "boss fight"] },
+    { name: "Minos Prime", url: "prime-sanctums/p-1/prime-sanctum-bosses/minos-prime.html", keywords: ["minos prime", "prime sanctum", "boss fight"] },
+    { name: "Flesh Panopticon", url: "prime-sanctums/p-2/prime-sanctum-bosses/flesh-panopticon.html", keywords: ["flesh panopticon", "special boss", "boss fight"] },
+    { name: "Sisyphus Prime", url: "prime-sanctums/p-2/prime-sanctum-bosses/sisyphus-prime.html", keywords: ["sisyphus prime", "prime sanctum", "boss fight"] },
+	{ name: "King Sisyphus Lore", url: "lore/lore/king-sisyphus.html", keywords: ["king sisyphus lore", "king sisyphus", "lore"] },
+	{ name: "King Minos Lore", url: "lore/lore/king-minos.html", keywords: ["king minos lore", "king minos", "lore"] },
+	{ name: "Gabriel Lore", url: "lore/lore/gabriel.html", keywords: ["gabriel lore", "gabriel", "lore"] },
+	{ name: "Lucifer Lore", url: "lore/lore/lucifer.html", keywords: ["lucifer lore", "lucifer", "lore"] },
+	{ name: "The Council Lore", url: "lore/lore/the-council.html", keywords: ["the council lore", "the council", "lore"] }
+
+];
+
+        // Search Function
+        function searchFunction() {
+            const query = document.getElementById("search-bar").value.toLowerCase();
+            const dropdown = document.getElementById("search-dropdown");
+            dropdown.innerHTML = ""; // Clear previous results
+
+            // If no input, hide the dropdown
+            if (!query) {
+                dropdown.style.display = "none";
+                return;
+            }
+
+            const filteredPages = pages.filter(page => 
+                page.keywords.some(keyword => keyword.includes(query)) // Find matching pages by keywords
+            );
+
+            // Show the dropdown if there are results
+            if (filteredPages.length > 0) {
+                dropdown.style.display = "block";
+                filteredPages.forEach(page => {
+                    const div = document.createElement("div");
+                    div.classList.add("dropdown-item");
+                    div.innerHTML = page.name;
+                    div.onclick = () => window.location.href = page.url;
+                    dropdown.appendChild(div);
+                });
+            } else {
+                dropdown.style.display = "none"; // Hide if no results
+            }
+        }
+		
+		function filterBosses() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const results = pages.filter(page => 
+        page.name.toLowerCase().includes(input) || 
+        page.keywords.some(keyword => keyword.toLowerCase().includes(input))
+    );
+
+    const resultsDiv = document.getElementById('searchResults');
+    resultsDiv.innerHTML = ''; // Clear previous results
+
+    if (input && results.length > 0) {
+        resultsDiv.style.display = 'block';
+        results.forEach(result => {
+            const div = document.createElement('div');
+            div.textContent = result.name;
+            div.onclick = () => window.location.href = result.url;
+            resultsDiv.appendChild(div);
+        });
+    } else {
+        resultsDiv.style.display = 'none';
+    }
+}
+    </script>
+</body>
+</html>

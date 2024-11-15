@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hideous Mass Guide - ULTRAGUIDE</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="../../interactive.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ULTRAGUIDE - Hideous Mass</h1>
+    </header>
+    
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "../basic-bosses.html";
+        }
+    </script>
+
+    <!-- Appearance Section -->
+    <section class="appearance">
+        <h2>Appearance</h2>
+        <p>The Hideous Mass is a scorpion-like creature, made of featureless flesh covered in heavy armor. Its head features a lion-like design, most visible in its laying form. The creature possesses six legs, though it remains stationary during combat, and its scorpion-like tail has four glowing-eyed faces capable of firing harpoons. When enraged, it flips onto its back, exposing its vulnerable belly but becoming more aggressive and destructive.</p>
+        <img src="images/hideous-mass.png" alt="Hideous Mass Upright">
+        <p><strong>Laying Form:</strong> The Hideous Mass lowers its body, hiding its belly and raising its tail to use its harpoon attack.</p>
+        <img src="images/hideous-mass-laying.png" alt="Hideous Mass Laying">
+        <p><strong>Enraged Form:</strong> When enraged, it flips onto its back, exposing its weak points and rapid-firing mortar attacks.</p>
+        <img src="images/hideous-mass-enraged.png" alt="Enraged Hideous Mass">
+    </section>
+
+    <!-- Combat Overview Section -->
+    <section class="combat-overview">
+        <h2>Combat Overview</h2>
+        <p>The Hideous Mass is a stationary but highly durable foe that alternates between two forms: Upright and Laying. It uses powerful attacks such as shockwaves, mortars, and harpoons to punish the player. Its behavior changes drastically when enraged, focusing on overwhelming aggression while exposing its weak spots for precision strikes.</p>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="forms">
+        <h2>Combat Forms</h2>
+        <h3>Upright Form</h3>
+        <p>In this form, the Hideous Mass exposes its belly, making it vulnerable to damage. However, it uses powerful area attacks to force the player to keep moving.</p>
+        <ul>
+            <li><strong>Mortars:</strong> Fires explosive projectiles into the air, which arc down to deal heavy damage. Can be parried with precise timing.</li>
+            <li><strong>Shockwave Slam:</strong> Slams its body into the ground, creating a damaging shockwave that knocks V1 into the air. After this attack, the Hideous Mass switches to its Laying Form.</li>
+        </ul>
+
+        <h3>Laying Form</h3>
+        <p>In this form, the Hideous Mass hides its belly, raising its tail to unleash devastating ranged attacks.</p>
+        <ul>
+            <li><strong>Shockwave Slam:</strong> Repeats the Upright Form's slam attack.</li>
+            <li><strong>Clap:</strong> Claps its arms together, generating a vertical shockwave directly in front of it.</li>
+            <li><strong>Harpoon:</strong> Fires a harpoon from its tail, embedding it in V1 and limiting movement, jump height, and dashing. The harpoon can be parried, damaged directly, or punched with Feedbacker or Knuckleblaster to release.</li>
+        </ul>
+
+        <h3>Enraged Form</h3>
+        <p>At low health, the Hideous Mass becomes enraged, flipping onto its back. While its weak spots become exposed, its flailing arms make precision attacks difficult, and it barrages the arena with mortar fire.</p>
+        <ul>
+            <li><strong>Constant Mortars:</strong> Rapid-fires mortar projectiles, making it crucial to avoid standing still.</li>
+            <li><strong>Weak Points:</strong> Exposed on its belly, but protected by its flailing arms, requiring skillful aim to exploit.</li>
+        </ul>
+    </section>
+
+    <!-- Difficulty Changes Section -->
+    <section class="difficulty-changes">
+        <h2>Difficulty Changes</h2>
+        <ul>
+            <li><strong>HARMLESS:</strong> Reduced range and duration for vertical shockwaves. Harpoon attack is disabled.</li>
+            <li><strong>LENIENT:</strong> Reduced range and duration for vertical shockwaves.</li>
+            <li><strong>BRUTAL:</strong> Harpoon attack remains active even during the enraged state, increasing its danger level significantly.</li>
+        </ul>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies">
+        <h2>Strategies & Tips</h2>
+        <ul>
+            <li><strong>Exploit Upright Form:</strong> Focus damage on the exposed belly during its Upright Form, using precision weapons like the Railcannon or Marksman Revolver.</li>
+            <li><strong>Deal with the Harpoon:</strong> Parry or punch the harpoon quickly to restore mobility and avoid being an easy target.</li>
+            <li><strong>Manage Mortar Fire:</strong> Maintain constant movement to avoid mortar explosions, especially during the enraged state.</li>
+            <li><strong>Focus Weak Spots:</strong> During the enraged phase, target its weak points while avoiding its flailing arms.</li>
+            <li><strong>Avoid Close Range:</strong> Stay out of the range of shockwaves and arm claps unless you’re baiting attacks for a parry opportunity.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <i>ULTRAGUIDE - Hideous Mass</i>
+        <br>
+        <i>ULTRAKILL, New Blood Interactive © 2020</i>
+    </footer>
+
+</body>
+</html>
